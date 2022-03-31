@@ -18,9 +18,10 @@ describe('Login',function()
     {
         const lp= new LoginPage()
         lp.visit()
-        lp.enterCredentials('mnabeel@nisum.com','nisum2123')
-        lp.clickLogin() 
-        lp.verifyInvalidLoginNotification()
+        cy.url().should('include', 'google')
+        // lp.enterCredentials('mnabeel@nisum.com','nisum2123')
+        // lp.clickLogin() 
+        // lp.verifyInvalidLoginNotification()
        
     })
     // it('Verify Disable or User Without any role should get Appropriate message',function()
