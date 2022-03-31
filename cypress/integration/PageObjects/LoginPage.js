@@ -2,7 +2,7 @@ class LoginPage
 {
     visit()
     {
-        cy.visit("https://qa-hcc.mynisum.com/",{retryOnNetworkFailure:true})
+        cy.visit("https://www.google.com/",{retryOnNetworkFailure:true})
         return this
     }
     enterCredentials(email,pass)
