@@ -4,11 +4,24 @@ pipeline{
     stages{
 
         stage('Build') {
-            steps {                
+            steps {
                 echo "================ Building ================="
+                script { 
+                       echo "Running it on {$params.Browser} "
+                        if(params.Browser=="Chrome")
+                        {
+                            
+                            sh 'npm run reportChrome'
 
-                        sh 'npm run test'
+                        }
+                        else
+                        {
+                            sh 'npm run reportFirefox'
+                        }
+
                     }
+                }
+
         }
 
     }
