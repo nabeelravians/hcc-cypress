@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "reportChrome" : "./node_modules/.bin/cypress run --spec cypress/integration/hcc/login.js --browser chrome",
-    "reportFirefox" : "./node_modules/.bin/cypress run --spec cypress/integration/hcc/login.js --browser firefox"
+    "chrome" : "./node_modules/.bin/cypress run --spec cypress/integration/hcc/login.js --browser chrome",
+    "firefox" : "./node_modules/.bin/cypress run --spec cypress/integration/hcc/login.js --browser firefox"
   },
   "author": "nabeel",
   "license": "ISC",

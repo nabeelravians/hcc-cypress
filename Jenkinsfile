@@ -11,12 +11,12 @@ pipeline{
                         if(params.Browser=="Chrome")
                         {
                             
-                            sh 'npm run reportChrome'
+                            sh 'npm run chrome'
 
                         }
                         else
                         {
-                            sh 'npm run reportFirefox'
+                            sh 'npm run firefox'
                         }
 
                     }
