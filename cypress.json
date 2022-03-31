@@ -3,8 +3,10 @@
     "reporterOptions":
     {
         "reportDir":"cypress/reports",
+        "reportFileName":"report",
         "overwrite": true,
         "html":true,
-        "json":false
-    }
+        "json":true
+    },
+    "video":false
 }
