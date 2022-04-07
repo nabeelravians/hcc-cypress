@@ -1,0 +1,172 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-04-07T11:51:14.036Z",
+    "end": "2022-04-07T11:53:51.558Z",
+    "duration": 157522,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c3dd7144-93bb-434a-bb39-136656a83927",
+      "title": "",
+      "fullFile": "cypress/integration/hcc/login.js",
+      "file": "cypress/integration/hcc/login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5eea04af-d38f-47fa-8e17-9d85f268e398",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "Login Login with valid credentials",
+              "timedOut": null,
+              "duration": 60243,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('mnabeel@nisum.com', 'nisum123');\nlp.clickLogin();\nlp.verifyWelcomeText();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:158276:72)\n    at https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:159329:16\n    at tryCatcher (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23)\n    at https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at LoginPage.visit (https://qa-hcc.mynisum.com/__cypress/tests?p=cypress/integration/hcc/login.js:124:8)\n    at Context.eval (https://qa-hcc.mynisum.com/__cypress/tests?p=cypress/integration/hcc/login.js:213:8)",
+                "diff": null
+              },
+              "uuid": "f9948d4c-2708-4e41-8743-55e6afb557b6",
+              "parentUUID": "5eea04af-d38f-47fa-8e17-9d85f268e398",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Invalid Notification Appear with Invalid Username and Password",
+              "fullTitle": "Login Verify Invalid Notification Appear with Invalid Username and Password",
+              "timedOut": null,
+              "duration": 42235,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('mnabeel@nisum.com', 'nisum2123');\nlp.clickLogin();\nlp.verifyInvalidLoginNotification();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[class='el-notification right']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[class='el-notification right']`, but never found it.\n    at LoginPage.verifyInvalidLoginNotification (https://qa-hcc.mynisum.com/__cypress/tests?p=cypress/integration/hcc/login.js:156:8)\n    at Context.eval (https://qa-hcc.mynisum.com/__cypress/tests?p=cypress/integration/hcc/login.js:223:8)",
+                "diff": null
+              },
+              "uuid": "9911f1f9-889d-447e-ae72-a66b2461c5f3",
+              "parentUUID": "5eea04af-d38f-47fa-8e17-9d85f268e398",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Disable or User Without any role should get Appropriate message",
+              "fullTitle": "Login Verify Disable or User Without any role should get Appropriate message",
+              "timedOut": null,
+              "duration": 25030,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('nabeelravians@gmail.com', 'nisum123');\nlp.clickLogin();\nlp.verifyNoUserRoleNotification();",
+              "err": {},
+              "uuid": "ded58762-6123-4d91-b6e6-8247f664e9e6",
+              "parentUUID": "5eea04af-d38f-47fa-8e17-9d85f268e398",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify User should logout succefully",
+              "fullTitle": "Login Verify User should logout succefully",
+              "timedOut": null,
+              "duration": 28816,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('mnabeel@nisum.com', 'nisum123');\nlp.clickLogin();\nlp.clickDownArrow();\nlp.clickLogoutButton();\nlp.verifyLogout();",
+              "err": {},
+              "uuid": "9f5333cc-b5de-4360-856d-bb0a437af5d2",
+              "parentUUID": "5eea04af-d38f-47fa-8e17-9d85f268e398",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ded58762-6123-4d91-b6e6-8247f664e9e6",
+            "9f5333cc-b5de-4360-856d-bb0a437af5d2"
+          ],
+          "failures": [
+            "f9948d4c-2708-4e41-8743-55e6afb557b6",
+            "9911f1f9-889d-447e-ae72-a66b2461c5f3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 156324,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
