@@ -6,9 +6,10 @@
   "scripts": {
     "combine-reports": "mochawesome-merge  ./cypress/reports/*.json > ./cypress/mochareports/report.json",
     "generate-report": "marge ./cypress/mochareports/*.json --reportDir mochawesome --assertDir mochawesome/assets --reportPageTitle index.html",
-    "test": "cypress run",
-    "chrome": "./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser chrome",
-    "firefox": "./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser firefox"
+    "test": "npm run clean:reports && cypress run",
+    "clean:reports": "rm -rf ./cypress/reports && mkdir cypress/reports",
+    "chrome": "npm run clean:reports && ./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser chrome",
+    "firefox": "npm run clean:reports && ./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser firefox"
   },
   "author": "nabeel",
   "license": "ISC",
