@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-07T19:44:10.387Z",
+    "end": "2022-04-07T19:44:33.595Z",
+    "duration": 23208,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "77bcf365-1b03-41a8-ad85-de20a6b0d539",
+      "title": "",
+      "fullFile": "cypress/integration/TestCases/ESS/Login.js",
+      "file": "cypress/integration/TestCases/ESS/Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa3ca4ee-b57f-44ca-8c12-675460ecd0cb",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "Login Login with valid credentials",
+              "timedOut": null,
+              "duration": 13101,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('mnabeel@nisum.com', 'nisum123');\nlp.clickLogin();\nlp.verifyWelcomeText();",
+              "err": {},
+              "uuid": "e3af4bec-49f0-4bd6-9533-4d165a06799d",
+              "parentUUID": "fa3ca4ee-b57f-44ca-8c12-675460ecd0cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Invalid Notification Appear with Invalid Username and Password",
+              "fullTitle": "Login Verify Invalid Notification Appear with Invalid Username and Password",
+              "timedOut": null,
+              "duration": 4149,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('mnabeel@nisum.com', 'nisum2123');\nlp.clickLogin();\nlp.verifyInvalidLoginNotification();",
+              "err": {},
+              "uuid": "0284643b-2df0-4a91-8915-2ae900c13f6c",
+              "parentUUID": "fa3ca4ee-b57f-44ca-8c12-675460ecd0cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Disable or User Without any role should get Appropriate message",
+              "fullTitle": "Login Verify Disable or User Without any role should get Appropriate message",
+              "timedOut": null,
+              "duration": 1767,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('nabeelravians@gmail.com', 'nisum123');\nlp.clickLogin();\nlp.verifyNoUserRoleNotification();",
+              "err": {},
+              "uuid": "8e2467e9-63e6-423c-827f-bd79c27b1f46",
+              "parentUUID": "fa3ca4ee-b57f-44ca-8c12-675460ecd0cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify User should logout succefully",
+              "fullTitle": "Login Verify User should logout succefully",
+              "timedOut": null,
+              "duration": 2969,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nlp.visit();\nlp.enterCredentials('mnabeel@nisum.com', 'nisum123');\nlp.clickLogin();\nlp.clickDownArrow();\nlp.clickLogoutButton();\nlp.verifyLogout();",
+              "err": {},
+              "uuid": "0e6775da-8c55-41cc-b25b-0ab94572dca4",
+              "parentUUID": "fa3ca4ee-b57f-44ca-8c12-675460ecd0cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e3af4bec-49f0-4bd6-9533-4d165a06799d",
+            "0284643b-2df0-4a91-8915-2ae900c13f6c",
+            "8e2467e9-63e6-423c-827f-bd79c27b1f46",
+            "0e6775da-8c55-41cc-b25b-0ab94572dca4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21986,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

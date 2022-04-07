@@ -1,4 +1,4 @@
-class essLeaves
+class Leaves
 {
     clickHamburgMenu()
     {
@@ -80,4 +80,4 @@ class essLeaves
 
 
 }
-export default essLeaves
+export default Leaves

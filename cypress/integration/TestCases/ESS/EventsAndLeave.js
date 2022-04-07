@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/>
 
-import essLeaves from "../PageObjects/essLeaves";
-import LoginPage from "../PageObjects/LoginPage";
+import Leaves from "../../PageObjects/ESS/Leaves";
+import LoginPage from "../../PageObjects/ESS/LoginPage";
 //const { expect } = require('chai');  // Using Expect style
 
 
@@ -12,7 +12,7 @@ describe('Events and Leaves',function()
     it('Verify that employee  should navigate to Public Holiday Calander',function()
     {
         const lp= new LoginPage()
-        const el = new essLeaves()
+        const el = new Leaves()
         lp.login("mnabeel@nisum.com","nisum123")
 //el.clickHamburgMenu()
         el.clickEventAndLeave()
@@ -23,7 +23,7 @@ describe('Events and Leaves',function()
     it('Verify that employee  should navigate to Leave Calander',function()
     {
         const lp= new LoginPage()
-        const el = new essLeaves()
+        const el = new Leaves()
         lp.login("mnabeel@nisum.com","nisum123")
       //  el.clickHamburgMenu()
         el.clickEventAndLeave()
@@ -35,7 +35,7 @@ describe('Events and Leaves',function()
     it('Verify that employee  should navigate to Other Leave Requests',function()
     {
         const lp= new LoginPage()
-        const el = new essLeaves()
+        const el = new Leaves()
         lp.login("mnabeel@nisum.com","nisum123")
        // el.clickHamburgMenu()
         el.clickEventAndLeave()
@@ -47,7 +47,7 @@ describe('Events and Leaves',function()
     it('Verify that employee should navigate to My Leave Requests',function()
     {
         const lp= new LoginPage()
-        const el = new essLeaves()
+        const el = new Leaves()
         lp.login("mnabeel@nisum.com","nisum123")
        // el.clickHamburgMenu()
         el.clickEventAndLeave()

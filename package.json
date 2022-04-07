@@ -8,8 +8,8 @@
     "generate-report": "marge ./cypress/mochareports/*.json --reportDir mochawesome --assertDir mochawesome/assets --reportPageTitle index.html",
     "test": "npm run clean:reports && cypress run",
     "clean:reports": "rm -rf ./cypress/reports && mkdir cypress/reports",
-    "chrome": "npm run clean:reports && ./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser chrome",
-    "firefox": "npm run clean:reports && ./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser firefox"
+    "chrome": "npm run clean:reports && ./node_modules/.bin/cypress run --spec cypress/integration/TestCases/ESS/* --browser chrome",
+    "firefox": "npm run clean:reports && ./node_modules/.bin/cypress run --spec cypress/integration/TestCases/ESS/* --browser firefox"
   },
   "author": "nabeel",
   "license": "ISC",
