@@ -7,8 +7,8 @@
     "combine-reports": "mochawesome-merge  ./cypress/reports/*.json > ./cypress/mochareports/report.json",
     "generate-report": "marge ./cypress/mochareports/*.json --reportDir mochawesome --assertDir mochawesome/assets --reportPageTitle index.html",
     "test": "cypress run",
-    "chrome": "./node_modules/.bin/cypress run --spec cypress/integration/hcc/login.js --browser chrome",
-    "firefox": "./node_modules/.bin/cypress run --spec cypress/integration/hcc/login.js --browser firefox"
+    "chrome": "./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser chrome",
+    "firefox": "./node_modules/.bin/cypress run --spec cypress/integration/hcc/* --browser firefox"
   },
   "author": "nabeel",
   "license": "ISC",

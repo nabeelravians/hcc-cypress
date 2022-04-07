@@ -2,7 +2,7 @@ class essLeaves
 {
     clickHamburgMenu()
     {
-        cy.get('.hamburger').click({force: true})
+        cy.get('.hamburger-container').click({force: true})
     }
     clickEventAndLeave()
     {
@@ -17,7 +17,7 @@ class essLeaves
     verifyPublicHolidaysCalendarTitle()
     {
         cy.get("[class='page-header']").invoke('text').        
-        should('equal',"Public Holiday Calendar") 
+        should('equal',"Public Holidays Calendar") 
     }
     verifyPublicHolidayCalendarURL()
     {

@@ -1,0 +1,179 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2022-04-07T17:47:40.423Z",
+    "end": "2022-04-07T17:48:31.062Z",
+    "duration": 50639,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5c00948f-345d-41a3-8a35-fa226f961b62",
+      "title": "",
+      "fullFile": "cypress/integration/hcc/eventsAndLeave.js",
+      "file": "cypress/integration/hcc/eventsAndLeave.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "58cd23bb-d520-4c8d-8777-b76c61fc60aa",
+          "title": "Events and Leaves",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that employee  should navigate to Public Holiday Calander",
+              "fullTitle": "Events and Leaves Verify that employee  should navigate to Public Holiday Calander",
+              "timedOut": null,
+              "duration": 21573,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nconst el = new _essLeaves.default();\nlp.login(\"mnabeel@nisum.com\", \"nisum123\");\nel.clickHamburgMenu();\nel.clickEventAndLeave();\nel.clickPublicHolidaysCalendar();\nel.verifyPublicHolidaysCalendarTitle();\nel.verifyPublicHolidayCalendarURL();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\nrunVisibilityCheck@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163867:76\nensureStrictVisibility@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163883:12\nrunAllChecks@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150548:14\nretryActionability@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150603:16\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10296:29\nwhenStable@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168760:60\n../driver/src/cy/retries.ts/create/retry/<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168257:14\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11139:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11083:18\n../../node_modules/bluebird/js/release/timers.js/module.exports/Promise.delay/handle<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163964:13\n    ensureElExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163982:12\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151012:25\n    onFailFn@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151052:11\n    tryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11135:18\n    _drainQueueStep@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7729:12\n    _drainQueue@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7608:14\n",
+                "diff": null
+              },
+              "uuid": "39c7a356-fa9a-4553-8a75-4f63aac65836",
+              "parentUUID": "58cd23bb-d520-4c8d-8777-b76c61fc60aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that employee  should navigate to Leave Calander",
+              "fullTitle": "Events and Leaves Verify that employee  should navigate to Leave Calander",
+              "timedOut": null,
+              "duration": 9514,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nconst el = new _essLeaves.default();\nlp.login(\"mnabeel@nisum.com\", \"nisum123\");\nel.clickHamburgMenu();\nel.clickEventAndLeave();\nel.clickLeavesCalendar();\nel.verifyLeavesCalendarTitle();\nel.verifyLeavesCalendarURL();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\nrunVisibilityCheck@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163867:76\nensureStrictVisibility@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163883:12\nrunAllChecks@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150548:14\nretryActionability@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150603:16\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10296:29\nwhenStable@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168760:60\n../driver/src/cy/retries.ts/create/retry/<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168257:14\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11139:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11083:18\n../../node_modules/bluebird/js/release/timers.js/module.exports/Promise.delay/handle<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163964:13\n    ensureElExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163982:12\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151012:25\n    onFailFn@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151052:11\n    tryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11135:18\n    _drainQueueStep@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7729:12\n    _drainQueue@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7608:14\n",
+                "diff": null
+              },
+              "uuid": "ea7d6adf-9ac3-4c1b-86c8-4676c902f9ee",
+              "parentUUID": "58cd23bb-d520-4c8d-8777-b76c61fc60aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that employee  should navigate to Other Leave Requests",
+              "fullTitle": "Events and Leaves Verify that employee  should navigate to Other Leave Requests",
+              "timedOut": null,
+              "duration": 8837,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nconst el = new _essLeaves.default();\nlp.login(\"mnabeel@nisum.com\", \"nisum123\");\nel.clickHamburgMenu();\nel.clickEventAndLeave();\nel.clickOtherLeaveRequests();\nel.verifyOtherLeaveRequestsTitle();\nel.verifyOtherLeaveRequestsURL();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\nrunVisibilityCheck@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163867:76\nensureStrictVisibility@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163883:12\nrunAllChecks@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150548:14\nretryActionability@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150603:16\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10296:29\nwhenStable@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168760:60\n../driver/src/cy/retries.ts/create/retry/<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168257:14\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11139:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11083:18\n../../node_modules/bluebird/js/release/timers.js/module.exports/Promise.delay/handle<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163964:13\n    ensureElExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163982:12\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151012:25\n    onFailFn@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151052:11\n    tryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11135:18\n    _drainQueueStep@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7729:12\n    _drainQueue@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7608:14\n",
+                "diff": null
+              },
+              "uuid": "fcc375ae-9d65-468e-b2e2-99ca76f36c33",
+              "parentUUID": "58cd23bb-d520-4c8d-8777-b76c61fc60aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that employee should navigate to My Leave Requests",
+              "fullTitle": "Events and Leaves Verify that employee should navigate to My Leave Requests",
+              "timedOut": null,
+              "duration": 8673,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _LoginPage.default();\nconst el = new _essLeaves.default();\nlp.login(\"mnabeel@nisum.com\", \"nisum123\");\nel.clickHamburgMenu();\nel.clickEventAndLeave();\nel.clickMyLeaveRequests();\nel.verifyMyLeaveRequestsTitle();\nel.verifyMyLeaveRequestsURL();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span data-v-9875718e=\"\">Events/...</span>`\n\nThis element `<span>` is not visible because it has CSS property: `visibility: hidden`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\nrunVisibilityCheck@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163867:76\nensureStrictVisibility@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163883:12\nrunAllChecks@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150548:14\nretryActionability@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:150603:16\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10296:29\nwhenStable@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168760:60\n../driver/src/cy/retries.ts/create/retry/<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:168257:14\ntryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11139:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._fulfill@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11083:18\n../../node_modules/bluebird/js/release/timers.js/module.exports/Promise.delay/handle<@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163964:13\n    ensureElExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:163982:12\n    ensureExistence@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151012:25\n    onFailFn@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:151052:11\n    tryCatcher@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11059:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:11135:18\n    _drainQueueStep@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7729:12\n    _drainQueue@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://qa-hcc.mynisum.com/__cypress/runner/cypress_runner.js:7608:14\n",
+                "diff": null
+              },
+              "uuid": "e3b990b6-f8f6-4f7b-a74c-8d697b2d45f9",
+              "parentUUID": "58cd23bb-d520-4c8d-8777-b76c61fc60aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "39c7a356-fa9a-4553-8a75-4f63aac65836",
+            "ea7d6adf-9ac3-4c1b-86c8-4676c902f9ee",
+            "fcc375ae-9d65-468e-b2e2-99ca76f36c33",
+            "e3b990b6-f8f6-4f7b-a74c-8d697b2d45f9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 48597,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
