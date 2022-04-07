@@ -5,6 +5,13 @@ class LoginPage
         cy.visit("https://qa-hcc.mynisum.com/",{retryOnNetworkFailure:true})
         return this
     }
+
+    login(email,pass)
+    {
+        this.visit()
+        this.enterCredentials(email,pass)
+        this.clickLogin()
+    }
     enterCredentials(email,pass)
     {
          const emailFieald = cy.get("[placeholder='User Name']")

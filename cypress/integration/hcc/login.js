@@ -11,6 +11,7 @@ describe('Login',function()
         lp.enterCredentials('mnabeel@nisum.com','nisum123')
         lp.clickLogin() 
         lp.verifyWelcomeText()
+    
        
     })
 
