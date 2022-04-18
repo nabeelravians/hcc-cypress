@@ -5,10 +5,10 @@ describe('Team Managment',function()
 {
     it('Verify that user can navigate to Team Managment Section',function()
     {
-        cy.visit('/')
-        const gen= new General()
-        const tm= new TeamManagment()
-        lp.login("mnabeel@nisum.com","nisum123")
+        // cy.visit('/')
+        // const gen= new General()
+        // const tm= new TeamManagment()
+        // lp.login("mnabeel@nisum.com","nisum123")
 
 
        
