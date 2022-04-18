@@ -1,4 +1,5 @@
 {
+    "baseUrl":"https://qa-hcc.mynisum.com/",
     "reporter":"mochawesome",
     "reporterOptions":
     {

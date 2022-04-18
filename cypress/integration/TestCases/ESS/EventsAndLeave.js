@@ -2,10 +2,6 @@
 
 import Leaves from "../../PageObjects/ESS/Leaves";
 import LoginPage from "../../PageObjects/ESS/LoginPage";
-//const { expect } = require('chai');  // Using Expect style
-
-
-
 
 describe('Events and Leaves',function()
 {

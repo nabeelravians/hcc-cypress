@@ -11,7 +11,6 @@ describe('Login',function()
         lp.enterCredentials('mnabeel@nisum.com','nisum123')
         lp.clickLogin() 
         lp.verifyWelcomeText()
-    
        
     })
 
@@ -21,8 +20,7 @@ describe('Login',function()
         lp.visit()
         lp.enterCredentials('mnabeel@nisum.com','nisum2123')
         lp.clickLogin() 
-        lp.verifyInvalidLoginNotification()
-       
+        lp.verifyInvalidLoginNotification() 
     })
     it('Verify Disable or User Without any role should get Appropriate message',function()
     {
